@@ -7,13 +7,16 @@ from .views import *
 router = DefaultRouter()
 
 router.register('AudioFunAsr', AudioFunAsrViewSet, 'AudioFunAsr')
-# router.register('AudioWhisper', AudioWhisperViewSet, 'AudioWhisper')
+router.register('AudioWhisper', AudioWhisperViewSet, 'AudioWhisper')
 router.register('AudioFasterWhisper', AudioFasterWhisperViewSet, 'AudioFasterWhisper')
+router.register('AudioMicrosoftTTS', AudioMicrosoftTTSViewSet, 'AudioMicrosoftTTS')
+router.register('AudioMoYinTTS', AudioMoYinTTSViewSet, 'AudioMoYinTTS')
 
 urlpatterns = [
-    path('funasr_task/', funasr_task, name='funasr_task'),
-    # path('whisper_task/', whisper_task, name='whisper_task'),
-    path('fasterwhisper_task/', fasterwhisper_task, name='fasterwhisper_task'),
-
+    path('FunAsr_task/', FunAsr_task, name='FunAsr_task'),
+    path('Whisper_task/', Whisper_task, name='Whisper_task'),
+    path('FasterWhisper_task/', FasterWhisper_task, name='FasterWhisper_task'),
+    path('MicrosoftTTS_task/', MicrosoftTTS_task, name='MicrosoftTTS_task'),
+    path('MoYinTTS_task/', MoYinTTS_task, name='MoYinTTS_task'),
 ]
 urlpatterns += router.urls
