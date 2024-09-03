@@ -21,6 +21,7 @@ lib64/
 parts/
 sdist/
 var/
+modules/BuildPyd/build/**
 wheels/
 share/python-wheels/
 *.egg-info/
