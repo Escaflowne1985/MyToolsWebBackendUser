@@ -14,7 +14,7 @@ for /f "tokens=5" %%a in ('netstat -ano ^| findstr :%PORT%') do (
 
 :: 如果没有找到PID
 echo No process found using port %PORT%.
-goto :EOF
+goto :KILL_PROCESSES
 
 :FOUND_PID
 :: 检查是否找到PID
@@ -25,5 +25,20 @@ if defined PID (
 ) else (
     echo No process found using port %PORT%.
 )
+
+:KILL_PROCESSES
+:: 清理掉所有Python进程
+echo Killing all Python processes...
+for /f "tokens=2" %%a in ('tasklist ^| findstr python') do (
+    taskkill /PID %%a /F
+)
+echo Python processes terminated.
+
+:: 清理掉所有FFmpeg进程
+echo Killing all FFmpeg processes...
+for /f "tokens=2" %%a in ('tasklist ^| findstr ffmpeg') do (
+    taskkill /PID %%a /F
+)
+echo FFmpeg processes terminated.
 
 endlocal
