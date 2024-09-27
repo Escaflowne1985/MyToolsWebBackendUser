@@ -21,10 +21,10 @@ send_dict = {}
 # 发送消息结构体
 def set_message(sender, msg_type, msg, unread=0):
     text = {
-        'sender': sender,
-        'contentType': msg_type,
-        'content': msg,
-        'unread': unread
+        'sender':sender,
+        'contentType':msg_type,
+        'content':msg,
+        'unread':unread
     }
     return text
 
@@ -104,7 +104,7 @@ class MegCenter(DvadminWebSocket):
         for send_user in user_list:
             await self.channel_layer.group_send(
                 "user_" + str(send_user),
-                {'type': 'push.message', 'json': text_data_json}
+                {'type':'push.message', 'json':text_data_json}
             )
 
     async def push_message(self, event):
@@ -117,6 +117,7 @@ class MessageCreateSerializer(CustomModelSerializer):
     """
     消息中心-新增-序列化器
     """
+
     class Meta:
         model = MessageCenter
         fields = "__all__"
@@ -129,8 +130,8 @@ def websocket_push(user_id, message):
     async_to_sync(channel_layer.group_send)(
         username,
         {
-            "type": "push.message",
-            "json": message
+            "type":"push.message",
+            "json":message
         }
     )
 
@@ -138,18 +139,18 @@ def websocket_push(user_id, message):
 def create_message_push(title: str, content: str, target_type: int = 0, target_user: list = None, target_dept=None,
                         target_role=None, message: dict = None, request=Request):
     if message is None:
-        message = {"contentType": "INFO", "content": None}
+        message = {"contentType":"INFO", "content":None}
     if target_role is None:
         target_role = []
     if target_dept is None:
         target_dept = []
     data = {
-        "title": title,
-        "content": content,
-        "target_type": target_type,
-        "target_user": target_user,
-        "target_dept": target_dept,
-        "target_role": target_role
+        "title":title,
+        "content":content,
+        "target_type":target_type,
+        "target_user":target_user,
+        "target_dept":target_dept,
+        "target_role":target_role
     }
     message_center_instance = MessageCreateSerializer(data=data, request=request)
     message_center_instance.is_valid(raise_exception=True)
@@ -164,8 +165,8 @@ def create_message_push(title: str, content: str, target_type: int = 0, target_u
     targetuser_data = []
     for user in users:
         targetuser_data.append({
-            "messagecenter": message_center_instance.instance.id,
-            "users": user
+            "messagecenter":message_center_instance.instance.id,
+            "users":user
         })
     targetuser_instance = MessageCenterTargetUserSerializer(data=targetuser_data, many=True, request=request)
     targetuser_instance.is_valid(raise_exception=True)
@@ -177,7 +178,49 @@ def create_message_push(title: str, content: str, target_type: int = 0, target_u
         async_to_sync(channel_layer.group_send)(
             username,
             {
-                "type": "push.message",
-                "json": {**message, 'unread': unread_count}
+                "type":"push.message",
+                "json":{**message, 'unread':unread_count}
             }
         )
+
+
+import sys
+
+
+class LogWebSocket(AsyncWebsocketConsumer):
+    async def connect(self):
+        try:
+            print("[WebSocket] Client connected, adding to log_group")
+            await self.channel_layer.group_add(
+                "log_group",  # 群组名称
+                self.channel_name
+            )
+            # print("channel_name", self.channel_name)
+            await self.accept()
+
+            # 使用 json.dumps 发送 JSON 格式的数据
+            await self.send(text_data=json.dumps({
+                'sender':'system',
+                'contentType':'SYSTEM',
+                'content':'您已成功连接到 WebSocket',
+                'unread':0
+            }))
+            # print("[WebSocket] Client added to log_group")
+        except Exception as e:
+            print(f"[WebSocket] Error adding client to log_group: {str(e)}")
+
+    async def disconnect(self, close_code):
+        # print("[WebSocket] Client disconnecting, removing from log_group")
+        await self.channel_layer.group_discard(
+            "log_group",
+            self.channel_name
+        )
+
+    async def log_message(self, event):
+        message = event['message']
+        await self.send(text_data=json.dumps({
+            'sender':'log',
+            'contentType':'LOG',
+            'content':message,
+            'unread':0
+        }))
