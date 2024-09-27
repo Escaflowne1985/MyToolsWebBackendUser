@@ -25,6 +25,7 @@ sdist/
 var/
 start_tool.exe
 /启动器制作
+启动器.exe
 start_tool.py
 modules/BuildPyd/build/**
 **/migrations/*.py
