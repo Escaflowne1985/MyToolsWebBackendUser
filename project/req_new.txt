@@ -1,4 +1,0 @@
-pychorus
-pandas
-you-get
-yt-dlp
