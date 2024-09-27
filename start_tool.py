@@ -12,6 +12,7 @@ class Launcher(QtWidgets.QWidget):
 
     def init_ui(self):
         self.setWindowTitle("Django Project Launcher")
+        self.resize(800, 600)
 
         # 创建按钮
         self.kill_button = QtWidgets.QPushButton("杀掉所有Python和ffmpeg进程", self)
@@ -20,29 +21,41 @@ class Launcher(QtWidgets.QWidget):
         self.start_button = QtWidgets.QPushButton("启动Django服务", self)
 
         # 创建输出区域
-        self.output_area = QtWidgets.QTextEdit(self)
+        self.output_area = QtWidgets.QPlainTextEdit(self)
         self.output_area.setReadOnly(True)
+        self.output_area.ensureCursorVisible()
 
-        # 布局设置
-        layout = QtWidgets.QVBoxLayout()
+        # 创建按钮布局
         button_layout = QtWidgets.QVBoxLayout()
         button_layout.addWidget(self.kill_button)
         button_layout.addWidget(self.git_button)
         button_layout.addWidget(self.install_button)
         button_layout.addWidget(self.start_button)
 
-        layout.addLayout(button_layout)
-        layout.addWidget(self.output_area)
-        self.setLayout(layout)
+        # 主布局
+        main_layout = QtWidgets.QHBoxLayout()
+        main_layout.addLayout(button_layout)
+        main_layout.addWidget(self.output_area, 1)  # 添加伸展因子确保输出区域扩展
+
+        self.setLayout(main_layout)
 
         # 连接按钮事件
         self.kill_button.clicked.connect(self.kill_processes)
-        self.git_button.clicked.connect(self.update_git)
-        self.install_button.clicked.connect(self.install_packages)
-        self.start_button.clicked.connect(self.start_django)
+        self.git_button.clicked.connect(lambda:self.run_command("git checkout . && git pull"))
+        self.install_button.clicked.connect(
+            lambda:self.run_command("./dv3admin/Scripts/pip.exe install -r project/req_new.txt && ./dv3admin/python.exe manage.py makemigrations && ./dv3admin/python.exe manage.py migrate"))
+        self.start_button.clicked.connect(lambda:self.run_command("./dv3admin/pythonw.exe manage.py runserver 0.0.0.0:9000"))
 
     def append_output(self, message):
-        self.output_area.append(message)
+        self.output_area.appendPlainText(message.strip())
+
+    def run_command(self, cmd):
+        process = QtCore.QProcess(self)
+        process.setProgram("cmd.exe")
+        process.setArguments(["/C", cmd])
+        process.readyReadStandardOutput.connect(lambda:self.append_output(str(process.readAllStandardOutput(), 'utf-8')))
+        process.readyReadStandardError.connect(lambda:self.append_output(str(process.readAllStandardError(), 'utf-8')))
+        process.start()
 
     def kill_processes(self):
         current_process = psutil.Process()  # 获取当前进程
@@ -50,54 +63,6 @@ class Launcher(QtWidgets.QWidget):
             if (proc.name() in ['python.exe', 'ffmpeg.exe']) and (proc.pid != current_process.pid):
                 proc.kill()
         self.append_output("已杀掉所有Python和ffmpeg进程，除了当前进程。")
-
-    def update_git(self):
-        cmd = "git checkout . && git pull"
-        process = subprocess.Popen(f'cmd.exe /c {cmd}', stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-
-        # 实时输出命令结果
-        for line in process.stdout:
-            self.append_output(line)
-
-        process.wait()
-        if process.returncode == 0:
-            self.append_output("已成功更新Git仓库。")
-        else:
-            self.append_output("更新失败，请查看输出。")
-
-    def install_packages(self):
-        try:
-            pip_result = subprocess.run(["./dv3admin/Scripts/pip.exe", "install", "-r", "project/req_new.txt"], capture_output=True, text=True)
-            self.append_output(pip_result.stdout)
-            self.append_output(pip_result.stderr)
-
-            makemigrations_result = subprocess.run(["./dv3admin/python.exe", "manage.py", "makemigrations"], capture_output=True, text=True)
-            self.append_output(makemigrations_result.stdout)
-            self.append_output(makemigrations_result.stderr)
-
-            migrate_result = subprocess.run(["./dv3admin/python.exe", "manage.py", "migrate"], capture_output=True, text=True)
-            self.append_output(migrate_result.stdout)
-            self.append_output(migrate_result.stderr)
-
-            if pip_result.returncode == 0 and makemigrations_result.returncode == 0 and migrate_result.returncode == 0:
-                self.append_output("已成功安装pip包和数据库迁移。")
-            else:
-                self.append_output("安装或迁移过程中发生错误。")
-        except Exception as e:
-            self.append_output(f"异常: {str(e)}")
-
-    def start_django(self):
-        process = subprocess.Popen(["./dv3admin/pythonw.exe", "manage.py", "runserver", "0.0.0.0:9000"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-
-        # 实时输出命令结果
-        for line in process.stdout:
-            self.append_output(line)
-
-        process.wait()
-        if process.returncode == 0:
-            self.append_output("Django服务已启动。")
-        else:
-            self.append_output("Django服务启动失败。")
 
 
 if __name__ == "__main__":
