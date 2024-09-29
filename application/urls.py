@@ -115,6 +115,8 @@ urlpatterns = (
             path('api/Image/', include('modules.Image.urls')),
             path('api/User/', include('modules.User.urls')),
             path('api/Video/', include('modules.Video.urls')),
+            path('api/SEO/', include('modules.SEO.urls')),
+            path('api/Spider/', include('modules.Spider.urls')),
 
             # 仅用于开发，上线需关闭
             path("api/token/", LoginTokenView.as_view()),
