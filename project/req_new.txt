@@ -2,3 +2,4 @@ pychorus
 pandas
 you-get
 yt-dlp
+mysql-connector-python
