@@ -13,6 +13,11 @@ from channels.security.websocket import AllowedHostsOriginValidator
 from channels.routing import ProtocolTypeRouter, URLRouter
 from django.core.asgi import get_asgi_application
 
+# 添加以下代码来全局禁用 tqdm
+import functools
+from tqdm import tqdm
+tqdm = functools.partial(tqdm, disable=True)
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'application.settings')
 os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
 

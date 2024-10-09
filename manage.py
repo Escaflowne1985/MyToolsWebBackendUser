@@ -3,6 +3,12 @@
 import os
 import sys
 
+# 添加以下代码来全局禁用 tqdm
+import functools
+from tqdm import tqdm
+
+tqdm = functools.partial(tqdm, disable=True)
+
 
 def main():
     """Run administrative tasks."""
