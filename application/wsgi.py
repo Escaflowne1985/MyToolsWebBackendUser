@@ -7,12 +7,8 @@ For more information on this file, see
 https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/
 """
 
-# 添加以下代码来全局禁用 tqdm
-import functools
-from tqdm import tqdm
-tqdm = functools.partial(tqdm, disable=True)
-
 import os
+
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'application.settings')

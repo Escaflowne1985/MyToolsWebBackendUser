@@ -1,12 +1,5 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
-
-# 添加以下代码来全局禁用 tqdm
-import functools
-from tqdm import tqdm
-
-tqdm = functools.partial(tqdm, disable=True)
-
 import os
 import sys
 

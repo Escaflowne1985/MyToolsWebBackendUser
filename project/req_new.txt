@@ -3,3 +3,6 @@ pandas
 you-get
 yt-dlp
 mysql-connector-python
+openai
+scenedetect
+opencv-python

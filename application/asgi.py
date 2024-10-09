@@ -7,11 +7,6 @@ For more information on this file, see
 https://docs.djangoproject.com/en/3.2/howto/deployment/asgi/
 """
 
-# 添加以下代码来全局禁用 tqdm
-import functools
-from tqdm import tqdm
-tqdm = functools.partial(tqdm, disable=True)
-
 import os
 from channels.auth import AuthMiddlewareStack
 from channels.security.websocket import AllowedHostsOriginValidator
