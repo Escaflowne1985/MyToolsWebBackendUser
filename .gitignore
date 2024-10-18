@@ -26,7 +26,7 @@ var/
 start_tool.exe
 /启动器制作
 启动器.exe
-启动器 v0.1.0.exe
+启动器*.exe
 start_tool.py
 modules/BuildPyd/build/**
 **/migrations/*.py
