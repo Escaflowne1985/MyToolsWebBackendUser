@@ -6,3 +6,4 @@ mysql-connector-python
 openai
 scenedetect
 opencv-python
+aiohttp
