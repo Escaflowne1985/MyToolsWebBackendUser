@@ -28,6 +28,8 @@ lib/
 lib64/
 parts/
 sdist/
+dv3admin/
+start_tool.py
 var/
 *.egg-info/
 .installed.cfg
@@ -35,6 +37,7 @@ var/
 media/*.mp3
 media/*.mp4
 media/*.wav
+启动器*.exe
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
