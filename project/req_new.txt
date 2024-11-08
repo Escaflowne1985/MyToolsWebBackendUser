@@ -7,3 +7,4 @@ openai
 scenedetect
 opencv-python
 aiohttp
+websocket-client
