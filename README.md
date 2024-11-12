@@ -4,7 +4,7 @@
 
 【QQ交流群群：670870515】获取最新动态。
 
-![alt text](project/cover.jpg)
+![alt text](./assets/cover.jpg)
 
 # 功能与使用教程
 
@@ -57,49 +57,49 @@
 
 解压缩 `02.项目使用的字体，自己解压缩到系统字体目录.rar` ，复制里面的全部文件到`C:\Windows\Fonts`目录下，如果有重复的字体覆盖即可。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/abe80837dfc7444e8649ddaf7b6cf282.png)
+![在这里插入图片描述](./assets/abe80837dfc7444e8649ddaf7b6cf282.png)
 
 根据自己的情况解压缩一键包一键包解压完成完成后会看到新的执行程序，以后每次启动程序会自动执行更新操作。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/ae8c4a62eddf4e07b91a57538fb138c0.png)
+![在这里插入图片描述](./assets/ae8c4a62eddf4e07b91a57538fb138c0.png)
 
 打开之后点击一键启动即可。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/7c29ce788437430ca0dd833b37183f4f.png)
+![在这里插入图片描述](./assets/7c29ce788437430ca0dd833b37183f4f.png)
 
 执行后会弹出CMD命令行窗口，当看到登录界面后关闭命令行窗口即可。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/cf47d329f8dd43f7a3a4aa49819c98c5.png)
+![在这里插入图片描述](./assets/cf47d329f8dd43f7a3a4aa49819c98c5.png)
 # 软件安装（源码）
 
 **进行注册并登录后，邀请码请在公众号中获取。**
 
 下载后需要先安装`01.[更新程序必装]Git-2.46.1-64-bit.exe`，打开程序之后默认一路下一步点下去安装接口。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/97efece6bd294975b1bca36a310b95f0.png)
+![在这里插入图片描述](./assets/97efece6bd294975b1bca36a310b95f0.png)
 
 
 在 `git` 中 [MyToolsWebBackendUser](https://gitee.com/escaflowne/MyToolsWebBackendUser) 进行项目克隆。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/b9a43e6da8e1460f82559acbaad19533.png)
+![在这里插入图片描述](./assets/b9a43e6da8e1460f82559acbaad19533.png)
 
 也可以在 `github` 中  [MyToolsWebBackendUser](https://github.com/Escaflowne1985/MyToolsWebBackendUser) 进行后端代码的获取。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/36030278e62f4b5588e5df1ef6787cb7.png)
+![在这里插入图片描述](./assets/36030278e62f4b5588e5df1ef6787cb7.png)
 
 然后在文件夹下生成一个目录 `MyToolsWebBackendUser`，打开后是这样的，其中`dv3admin`和`models`文件夹要自己创建，整合包不需要。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/27f9f5233188497699e16b9bad7c7e06.png)
+![在这里插入图片描述](./assets/27f9f5233188497699e16b9bad7c7e06.png)
 
 
 点击这里[下载 dv3admin后端环境](https://pan.baidu.com/s/1KcXU0er0ipGwznsFrFvQIA?pwd=67w7 )。下载后并解压到该处，解压后是这样的。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/c2be786443f94a77968edac1a69a9e57.png)
+![在这里插入图片描述](./assets/c2be786443f94a77968edac1a69a9e57.png)
 
 
 点击这里[下载 models模型文件](https://pan.baidu.com/s/1Z-GdlwoDU4HWqOcUAjHZsw?pwd=6cp1 )。下载后并解压到该处，解压后是这样的。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/7745cc575b5a4d30b42d58b011e615b6.png)
+![在这里插入图片描述](./assets/7745cc575b5a4d30b42d58b011e615b6.png)
 
 至此前期的准备工作就完事了，也可以直接下载首次完整包，就是比较大。
 
@@ -116,7 +116,7 @@
 
 在用户选项卡记得选择配音的消费方式。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/fbefcfd88f0e40c1a5f3fdca562d9df6.png)
+![在这里插入图片描述](./assets/fbefcfd88f0e40c1a5f3fdca562d9df6.png)
 
 选择之后记得点击保存，保存成功后会有提示。
 ## 文本转配音设置
@@ -127,22 +127,22 @@
 
 进入主页选择，在搜索栏输入 `MicrosoftTTS` 。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/308786131db344b8a3310e94c08859da.png)
+![在这里插入图片描述](./assets/308786131db344b8a3310e94c08859da.png)
 
 点击`MicrosoftTTS`后进入页面，在这里配置好配音的基础参数后点击保存即可。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/3dfde88fb70048b883610b6d2f860756.png)
+![在这里插入图片描述](./assets/3dfde88fb70048b883610b6d2f860756.png)
 
 
 **MoYin 魔音文本转音频** 
 
 进入主页选择，在搜索栏输入 `MoYinTTS` 。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/e57dc3da06e74bf9a89e953dfd30259c.png)
+![在这里插入图片描述](./assets/e57dc3da06e74bf9a89e953dfd30259c.png)
 
 点击`MoYinTTS`后进入页面，在这里配置好配音的基础参数后点击保存即可。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/9dbc130f099e413c9842e8e97e3b421e.png)
+![在这里插入图片描述](./assets/9dbc130f099e413c9842e8e97e3b421e.png)
 
 
 # 项目更新日志
