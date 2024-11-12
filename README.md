@@ -2,8 +2,7 @@
 
 # 项目使用教程（使用前必看）
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/248562ecf5524049b1cd1c0d18c82777.png)
-
+![alt text](project/cover.jpg)
 
 
 新增启动器功能，启动器请在【QQ群：670870515】获取。
