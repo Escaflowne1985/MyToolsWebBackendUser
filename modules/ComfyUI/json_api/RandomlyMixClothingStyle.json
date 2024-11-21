@@ -28,7 +28,7 @@
   },
   "62": {
     "inputs": {
-      "seed": 51371460629695
+      "seed": 141692512889740
     },
     "class_type": "Seed Everywhere"
   },
@@ -113,7 +113,7 @@
   },
   "231": {
     "inputs": {
-      "unet_name": "FLUX模型\\flux1-dev-fp8.safetensors",
+      "unet_name": "FLUX模型\\flux1-dev.sft",
       "weight_dtype": "fp8_e4m3fn"
     },
     "class_type": "UNETLoader"
@@ -146,7 +146,7 @@
   },
   "241": {
     "inputs": {
-      "lora_name": "精选常用\\【儿童摄影】 大猫 绪儿XL 古风奇幻场景服装整合_V2.safetensors",
+      "lora_name": "FLUX专用\\Flux洗图神器.safetensors",
       "strength_model": 0.4,
       "model": [
         "231",
@@ -210,7 +210,7 @@
       "number_type": "integer",
       "minimum": 1,
       "maximum": 1,
-      "seed": 678579344416586
+      "seed": 656306905419379
     },
     "class_type": "Random Number"
   },
@@ -385,7 +385,7 @@
   },
   "473": {
     "inputs": {
-      "seed": 657141272965781
+      "seed": 887046034739667
     },
     "class_type": "Seed Everywhere"
   },
@@ -493,7 +493,7 @@
   },
   "623": {
     "inputs": {
-      "noise_seed": 724960064061007
+      "noise_seed": 725968345510016
     },
     "class_type": "RandomNoise"
   },
@@ -513,6 +513,7 @@
   "629": {
     "inputs": {
       "tile_size": 1024,
+      "overlap": 64,
       "samples": [
         "620",
         0
@@ -627,7 +628,7 @@
   },
   "681": {
     "inputs": {
-      "image": "257f987bc9fa6281e25ef1c7b70670af.jpg",
+      "image": "QQ20241105-152758.jpg",
       "upload": "image"
     },
     "class_type": "LoadImage"
@@ -658,7 +659,7 @@
         "688",
         0
       ],
-      "text2": "This digital collage showcases a minimalist, casual outfit against a muted gray background. It includes a white t-shirt, a brown button-down shirt, beige trousers, white sneakers, and a black messenger bag. The ensemble is accessorized with a black shoulder strap and a small black pouch. The design is clean and modern, with a focus on neutral tones. Text in Japanese and English describes the outfit."
+      "text2": "This is a digital collage featuring a chic, minimalist fashion ensemble. At the center is a sleeveless, black wrap dress with a tie at the waist, paired with black high-heeled sandals and a small black crossbody bag. To the left, a pair of black sunglasses with a cat-eye design rests beside a gold necklace with a crescent moon pendant. A gold Louis Vuitton clutch with a monogram pattern sits to the right, accompanied by gold hoop earrings. The background is plain white, emphasizing the stylish black and gold accessories."
     },
     "class_type": "ShowText|pysssss"
   },
@@ -666,7 +667,7 @@
     "inputs": {
       "caption_type": "Descriptive",
       "caption_length": "long",
-      "low_vram": false,
+      "low_vram": true,
       "joy_two_pipeline": [
         "689",
         0
@@ -690,7 +691,7 @@
         "703",
         0
       ],
-      "text2": "以下是模特三视图的详细描述：\n\n**左图（侧面）**：身材矮小的大洋洲男性自信地站在柔和的灰色背景下，深色皮肤散发着温暖。他的低马尾辫呈光滑的银色，完美地衬托出他的脸庞。从这个角度，我们看到了整套服装，很明显重点是舒适和简单。\n\n在他身体的左侧，白色 T 恤从棕色纽扣衬衫下露出，为整体造型增添了一丝对比。米色长裤整齐地塞进白色运动鞋里，从头到脚形成了一条干净的线条。挎在肩上的黑色邮差包增添了一丝精致，而系在背带上的黑色小包则提供了额外的实用性。\n\n模特的深色肤色与服装的中性色调完美搭配，营造出一种既时尚又低调的和谐平衡。简洁的线条和极简主义的设计凸显了他矮小的身材，让他看起来更加自信和整洁。\n\n**中间图片（正面）**：\n站在我们正前方的模特散发着一种平静和安详的感觉。柔和的灰色背景似乎与他深色的肤色完美融合，营造出一种深度和立体感。\n\n白色 T 恤现在在棕色纽扣衬衫下完全可见，为整体造型增添了一丝清爽感。米色裤子非常合身，在所有合适的位置都紧紧贴合他的腿。白色运动鞋为这套服装增添了一抹对比色，而挎在肩上的黑色邮差包则增添了一丝粗犷感。\n\n附在背带上的黑色小包增加了一层实用性，但模特自信的表情才是真正让这张照片栩栩如生的。他的银色低马尾在柔和的背景下闪闪发光，引人注目。\n\n**右图（背面）**：\n从后面看，模特呈现出一种连贯而时尚的形象，让人难以移开视线。米色长裤非常合身，从头到脚形成一条干净的线条。白色运动鞋从裤脚下露出，为整体造型增添了一丝对比。\n\n挎在肩上的黑色邮差包增添了一丝精致，而系在背带上的黑色小包则增加了一层实用性。棕色纽扣衬衫现在完全可见，其微妙的图案和纹理为这套服装增添了深度和趣味。\n\n模特的深色肤色在柔和的灰色背景下散发出温暖的光芒，营造出一种既时尚又低调的和谐与平衡感。他的银色低马尾从后面闪闪发光，引人注目，引人注目。"
+      "text2": "以下是模特的三个视角：\n\n**左图**\n\n这位身材苗条的亚洲女孩站在纯白色背景前，左侧面向观众。她穿着一件无袖黑色裹身裙，完美地贴合她的曲线，腰部系带凸显了她苗条的身材。裙子刚好落在膝盖上方，展现出她健美的双腿。黑色高跟凉鞋装饰着她的脚，为她的整体造型增添了一丝精致。她的左肩上挂着一个黑色小斜挎包，其时尚的设计与这件衣服的简约相得益彰。\n\n她长长的黑发披散在背后，她化了淡淡的妆，让她的自然美得以展现。她的目光略微向下，仿佛陷入了沉思，为她的举止增添了一丝神秘感。\n\n**中图**\n\n女孩面向观众站着，从正面展示她别致的时尚装扮。无袖黑色裹身裙像手套一样贴合她的身体，腰部系带使她的腰部线条更加迷人。高跟凉鞋为她的整体造型增添了一抹戏剧感，而黑色小斜挎包优雅地挂在她的肩膀上。\n\n她的眼睛向下看，面部表情平静，仿佛正在享受片刻的宁静。她的黑发在背后蓬松地卷起，她的妆容淡雅而有效，突出了她自然的五官。\n\n**右图**\n\n女孩背对着观众站立，从后面展示她的服装。无袖黑色裹身裙优雅地围绕着她的曲线，腰部系带营造出美丽的轮廓。她长长的黑发垂在背后，她穿着和以前一样的高跟凉鞋。\n\n她的左肩上斜挎着一只黑色小包，耳后露出金色耳环，为整体造型增添一抹亮色。纯白的背景凸显了服装的时尚设计，让女孩的风格在简约的背景下显得格外突出。"
     },
     "class_type": "ShowText|pysssss"
   },
@@ -698,7 +699,7 @@
     "inputs": {
       "from_translate": "english",
       "to_translate": "chinese (simplified)",
-      "add_proxies": true,
+      "add_proxies": false,
       "proxies": "",
       "auth_data": "",
       "service": "GoogleTranslator",
@@ -722,8 +723,8 @@
       "url": "http://127.0.0.1:11434",
       "model": "llama3.1:latest (text)",
       "extra_model": "none",
-      "system": "You are an AI drawing assistant with rich imagination, good at describing various pictures, and accustomed to providing stable diffusion as prompts. I give you a text description of clothes. \n        You need to add this pile of clothes to a male model with a short body, dark skin tone, Oceanian, and low ponytail hair styled in a silver shade. \n        The scene should vividly capture the essence of this model in the described outfit, ensuring the outfit’s details are unchanged.\n        \n        Based on the previous description, please write a detailed description of the three views of the model in the following format:\n        \n        Left picture (Show the model from the left side, not the front of the face): a side profile photo of a short Oceanian male with dark skin tone, styled with low ponytail hair in a silver shade. The clothing should be fully described without any missing items, ensuring the details are accurate from this angle;\n        \n        Image on the middle side (front view): A full-body photo of a short Oceanian male from the front, with dark skin tone, and low ponytail hair styled in a silver shade. The clothing must be fully described without any missing items, capturing all front-facing details of the outfit;\n        \n        Right image (back of the person, no need to describe facial expression): A full-body photo of a short Oceanian male from the back, with dark skin tone, and low ponytail hair styled in a silver shade. The clothing must be fully described without any missing items, capturing all details from the back view.",
-      "seed": 768099628551370,
+      "system": "You are an AI drawing assistant with rich imagination, good at describing various pictures, and accustomed to providing stable diffusion as prompts. I give you a text description of clothes. You need to add this pile of clothes to a female model and describe the scene when this female model wears these described clothes. The clothes cannot be changed.\n\nBased on the previous description, please write a detailed description of the three views of the model in the following format:\n\nLeft picture (Show the model from the left side, not the front of the face): a side profile photo of a slim Asian girl + (the clothes and clothing should be fully described, without any missing items);\n\nImage on the middle side (front view): Full-body photo of a slim Asian girl from the front + (the clothes and clothing must be fully described, without any missing items);\n\nRight image (back of the person, no need to describe facial expression): Full-body photo of a slim Asian girl from the back + (the clothes and clothing must be fully described, without any missing items);",
+      "seed": 743934808886346,
       "top_k": 40,
       "top_p": 0.9,
       "temperature": 0.5,
@@ -740,7 +741,7 @@
         "705",
         0
       ],
-      "text2": "Here are the detailed descriptions of the three views of the model:\n\n**Left picture (side profile)**:\nThe short Oceanian male stands confidently against the muted gray background, his dark skin tone radiating warmth. His low ponytail hair is styled in a sleek silver shade, perfectly framing his face. From this angle, we see the entire outfit, and it's clear that the focus is on comfort and simplicity.\n\nOn the left side of his body, the white t-shirt peeks out from under the brown button-down shirt, adding a touch of contrast to the overall look. The beige trousers are tucked neatly into the white sneakers, creating a clean line from head to toe. The black messenger bag slung over his shoulder adds a hint of sophistication, while the small black pouch attached to the strap provides an extra layer of practicality.\n\nThe model's dark skin tone is beautifully complemented by the neutral tones of the outfit, creating a harmonious balance that's both stylish and understated. His short stature is amplified by the clean lines and minimalist design, making him appear even more confident and put-together.\n\n**Middle picture (front view)**:\nStanding directly in front of us, the model exudes a sense of calm and serenity. The muted gray background seems to blend seamlessly into his dark skin tone, creating an illusion of depth and dimensionality.\n\nThe white t-shirt is now fully visible under the brown button-down shirt, adding a touch of crispness to the overall look. The beige trousers are perfectly fitted, hugging his legs in all the right places. The white sneakers add a pop of contrast to the outfit, while the black messenger bag slung over his shoulder provides a hint of ruggedness.\n\nThe small black pouch attached to the strap adds an extra layer of practicality, but it's the model's confident expression that truly brings this image to life. His low ponytail hair styled in silver shines brightly against the muted background, drawing attention to his handsome features.\n\n**Right picture (back view)**:\nFrom behind, the model presents a cohesive and stylish image that's hard to look away from. The beige trousers are perfectly fitted, creating a clean line from head to toe. The white sneakers peek out from under the hem of the trousers, adding a touch of contrast to the overall look.\n\nThe black messenger bag slung over his shoulder adds a hint of sophistication, while the small black pouch attached to the strap provides an extra layer of practicality. The brown button-down shirt is now fully visible, its subtle patterns and textures adding depth and interest to the outfit.\n\nThe model's dark skin tone glows warmly against the muted gray background, creating a sense of harmony and balance that's both stylish and understated. His low ponytail hair styled in silver shines brightly from behind, drawing attention to his confident demeanor."
+      "text2": "Here are the three views of the model:\n\n**Left Picture**\n\nThe slim Asian girl stands in front of a plain white background, her left side facing the viewer. She's wearing a sleeveless, black wrap dress that hugs her curves perfectly, with a tie at the waist accentuating her slender figure. The dress falls just above her knees, showcasing her toned legs. Black high-heeled sandals adorn her feet, adding a touch of sophistication to her overall look. A small black crossbody bag hangs from her left shoulder, its sleek design complementing the simplicity of the outfit.\n\nHer long, dark hair cascades down her back, and she's wearing minimal makeup, allowing her natural beauty to shine through. Her gaze is directed slightly downward, as if lost in thought, adding a touch of mystery to her demeanor.\n\n**Middle Picture**\n\nThe girl stands facing the viewer, showcasing her chic fashion ensemble from the front. The sleeveless black wrap dress fits her body like a glove, with the tie at the waist creating a flattering definition around her midsection. The high-heeled sandals add a dramatic touch to her overall look, while the small black crossbody bag hangs elegantly from her shoulder.\n\nHer eyes are cast downward, and her facial expression is serene, as if she's enjoying a quiet moment to herself. Her dark hair falls in loose waves down her back, and her makeup is subtle yet effective, accentuating her natural features.\n\n**Right Picture**\n\nThe girl stands with her back facing the viewer, showcasing her outfit from behind. The sleeveless black wrap dress flows elegantly around her curves, with the tie at the waist creating a beautiful silhouette. Her long, dark hair cascades down her back, and she's wearing the same high-heeled sandals as before.\n\nA glimpse of the small black crossbody bag is visible on her left shoulder, while the gold hoop earrings peek out from behind her ears, adding a touch of sparkle to her overall look. The plain white background emphasizes the sleek design of the outfit, making the girl's style pop against the minimalist backdrop."
     },
     "class_type": "ShowText|pysssss"
   },
@@ -786,7 +787,7 @@
         "711",
         0
       ],
-      "text2": "这幅数字拼贴画展示了一套简约休闲的服装，背景为柔和的灰色。它包括一件白色 T 恤、一件棕色纽扣衬衫、米色长裤、白色运动鞋和一个黑色斜挎包。这套服装配有黑色肩带和一个小黑色包。设计简洁现代，以中性色调为重点。日语和英语文字描述了这套服装。"
+      "text2": "这是一幅数字拼贴画，展示了一套别致、简约的时尚套装。中间是一件无袖黑色裹身裙，腰部系有领带，搭配黑色高跟凉鞋和黑色小斜挎包。左边是一副猫眼设计的黑色太阳镜，旁边是一条带有新月吊坠的金项链。右边是一个金色的路易威登手拿包，上面有字母图案，搭配金色耳环。背景是纯白色的，突出了时尚的黑色和金色配饰。"
     },
     "class_type": "ShowText|pysssss"
   },
@@ -801,7 +802,7 @@
       ],
       "text_c": "",
       "speak_and_recognation": true,
-      "result": "Here are the detailed descriptions of the three views of the model: **Left picture (side profile)**:\nThe short Oceanian male stands confidently against the muted gray background, his dark skin tone radiating warmth. His low ponytail hair is styled in a sleek silver shade, perfectly framing his face. From this angle, we see the entire outfit, and it's clear that the focus is on comfort and simplicity. On the left side of his body, the white t-shirt peeks out from under the brown button-down shirt, adding a touch of contrast to the overall look. The beige trousers are tucked neatly into the white sneakers, creating a clean line from head to toe. The black messenger bag slung over his shoulder adds a hint of sophistication, while the small black pouch attached to the strap provides an extra layer of practicality. The model's dark skin tone is beautifully complemented by the neutral tones of the outfit, creating a harmonious balance that's both stylish and understated. His short stature is amplified by the clean lines and minimalist design, making him appear even more confident and put-together. **Middle picture (front view)**:\nStanding directly in front of us, the model exudes a sense of calm and serenity. The muted gray background seems to blend seamlessly into his dark skin tone, creating an illusion of depth and dimensionality. The white t-shirt is now fully visible under the brown button-down shirt, adding a touch of crispness to the overall look. The beige trousers are perfectly fitted, hugging his legs in all the right places. The white sneakers add a pop of contrast to the outfit, while the black messenger bag slung over his shoulder provides a hint of ruggedness. The small black pouch attached to the strap adds an extra layer of practicality, but it's the model's confident expression that truly brings this image to life. His low ponytail hair styled in silver shines brightly against the muted background, drawing attention to his handsome features. **Right picture (back view)**:\nFrom behind, the model presents a cohesive and stylish image that's hard to look away from. The beige trousers are perfectly fitted, creating a clean line from head to toe. The white sneakers peek out from under the hem of the trousers, adding a touch of contrast to the overall look. The black messenger bag slung over his shoulder adds a hint of sophistication, while the small black pouch attached to the strap provides an extra layer of practicality. The brown button-down shirt is now fully visible, its subtle patterns and textures adding depth and interest to the outfit. The model's dark skin tone glows warmly against the muted gray background, creating a sense of harmony and balance that's both stylish and understated. His low ponytail hair styled in silver shines brightly from behind, drawing attention to his confident demeanor."
+      "result": "Here are the three views of the model: **Left Picture** The slim Asian girl stands in front of a plain white background, her left side facing the viewer. She's wearing a sleeveless, black wrap dress that hugs her curves perfectly, with a tie at the waist accentuating her slender figure. The dress falls just above her knees, showcasing her toned legs. Black high-heeled sandals adorn her feet, adding a touch of sophistication to her overall look. A small black crossbody bag hangs from her left shoulder, its sleek design complementing the simplicity of the outfit. Her long, dark hair cascades down her back, and she's wearing minimal makeup, allowing her natural beauty to shine through. Her gaze is directed slightly downward, as if lost in thought, adding a touch of mystery to her demeanor. **Middle Picture** The girl stands facing the viewer, showcasing her chic fashion ensemble from the front. The sleeveless black wrap dress fits her body like a glove, with the tie at the waist creating a flattering definition around her midsection. The high-heeled sandals add a dramatic touch to her overall look, while the small black crossbody bag hangs elegantly from her shoulder. Her eyes are cast downward, and her facial expression is serene, as if she's enjoying a quiet moment to herself. Her dark hair falls in loose waves down her back, and her makeup is subtle yet effective, accentuating her natural features. **Right Picture** The girl stands with her back facing the viewer, showcasing her outfit from behind. The sleeveless black wrap dress flows elegantly around her curves, with the tie at the waist creating a beautiful silhouette. Her long, dark hair cascades down her back, and she's wearing the same high-heeled sandals as before. A glimpse of the small black crossbody bag is visible on her left shoulder, while the gold hoop earrings peek out from behind her ears, adding a touch of sparkle to her overall look. The plain white background emphasizes the sleek design of the outfit, making the girl's style pop against the minimalist backdrop."
     },
     "class_type": "StringFunction|pysssss"
   },
