@@ -30,6 +30,7 @@ parts/
 sdist/
 dv3admin/
 start_tool.py
+start_tool_ui.py
 var/
 *.egg-info/
 .installed.cfg
