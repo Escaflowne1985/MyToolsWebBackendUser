@@ -28,7 +28,7 @@
   },
   "62": {
     "inputs": {
-      "seed": 141692512889740
+      "seed": 571825927698300
     },
     "class_type": "Seed Everywhere"
   },
@@ -184,8 +184,7 @@
         "405",
         0
       ],
-      "speak_and_recognation": true,
-      "result": "High quality,8k,HUD，photograph，A female model stands confidently in front of a pure white background with the word \"CHANEL\" printed above it. She wears a chic black sleeveless dress with a V-neck and waist, and a transparent, flowing skirt that gently falls at her ankles. The overall effect is stylish and sophisticated. Her face is enhanced by oversized black sunglasses. Her ears are adorned with golden crescent-shaped earrings, and a delicate gold chain necklace glitters around her neck. In one hand, she holds a Louis Vuitton handbag with the iconic monogram pattern visible on the outside. On her feet, she wears black high-heeled sandals, which elongate her legs and make her look even more charming. A matching black clutch tucked under her arm completes this sophisticated and stylish look."
+      "speak_and_recognation": true
     },
     "class_type": "StringFunction|pysssss"
   },
@@ -210,7 +209,7 @@
       "number_type": "integer",
       "minimum": 1,
       "maximum": 1,
-      "seed": 656306905419379
+      "seed": 417446260775689
     },
     "class_type": "Random Number"
   },
@@ -385,7 +384,7 @@
   },
   "473": {
     "inputs": {
-      "seed": 887046034739667
+      "seed": 1079867410772830
     },
     "class_type": "Seed Everywhere"
   },
@@ -493,7 +492,7 @@
   },
   "623": {
     "inputs": {
-      "noise_seed": 725968345510016
+      "noise_seed": 593394530913786
     },
     "class_type": "RandomNoise"
   },
@@ -659,7 +658,7 @@
         "688",
         0
       ],
-      "text2": "This is a digital collage featuring a chic, minimalist fashion ensemble. At the center is a sleeveless, black wrap dress with a tie at the waist, paired with black high-heeled sandals and a small black crossbody bag. To the left, a pair of black sunglasses with a cat-eye design rests beside a gold necklace with a crescent moon pendant. A gold Louis Vuitton clutch with a monogram pattern sits to the right, accompanied by gold hoop earrings. The background is plain white, emphasizing the stylish black and gold accessories."
+      "text2": "This is a digital collage showcasing a chic Chanel-inspired outfit. At the center is a sleeveless, black wrap dress with a V-neckline and a tied waist, reminiscent of Chanel's signature style. Surrounding the dress are accessories: black Chanel sunglasses, a pair of gold hoop earrings with large dangling pearls, a small Chanel handbag with the iconic double Cs, a gold necklace featuring a circular pendant, and a black clutch. The background is white, and the items are arranged in a symmetrical, elegant layout."
     },
     "class_type": "ShowText|pysssss"
   },
@@ -667,7 +666,7 @@
     "inputs": {
       "caption_type": "Descriptive",
       "caption_length": "long",
-      "low_vram": true,
+      "low_vram": false,
       "joy_two_pipeline": [
         "689",
         0
@@ -691,7 +690,7 @@
         "703",
         0
       ],
-      "text2": "以下是模特的三个视角：\n\n**左图**\n\n这位身材苗条的亚洲女孩站在纯白色背景前，左侧面向观众。她穿着一件无袖黑色裹身裙，完美地贴合她的曲线，腰部系带凸显了她苗条的身材。裙子刚好落在膝盖上方，展现出她健美的双腿。黑色高跟凉鞋装饰着她的脚，为她的整体造型增添了一丝精致。她的左肩上挂着一个黑色小斜挎包，其时尚的设计与这件衣服的简约相得益彰。\n\n她长长的黑发披散在背后，她化了淡淡的妆，让她的自然美得以展现。她的目光略微向下，仿佛陷入了沉思，为她的举止增添了一丝神秘感。\n\n**中图**\n\n女孩面向观众站着，从正面展示她别致的时尚装扮。无袖黑色裹身裙像手套一样贴合她的身体，腰部系带使她的腰部线条更加迷人。高跟凉鞋为她的整体造型增添了一抹戏剧感，而黑色小斜挎包优雅地挂在她的肩膀上。\n\n她的眼睛向下看，面部表情平静，仿佛正在享受片刻的宁静。她的黑发在背后蓬松地卷起，她的妆容淡雅而有效，突出了她自然的五官。\n\n**右图**\n\n女孩背对着观众站立，从后面展示她的服装。无袖黑色裹身裙优雅地围绕着她的曲线，腰部系带营造出美丽的轮廓。她长长的黑发垂在背后，她穿着和以前一样的高跟凉鞋。\n\n她的左肩上斜挎着一只黑色小包，耳后露出金色耳环，为整体造型增添一抹亮色。纯白的背景凸显了服装的时尚设计，让女孩的风格在简约的背景下显得格外突出。"
+      "text2": "以下是模特的三张照片：\n\n**左图：**\n左侧侧面照片展示了我们这位身材苗条的亚洲女孩，肤色光滑如瓷器。她有一头长长的黑发，波浪般垂在背上。她的眼睛呈杏仁状，外眼角略微向上倾斜，让她看起来可爱又年轻。她穿着无袖黑色裹身裙，腰部系带，勾勒出迷人的轮廓。连衣裙的 V 领口凸显了她纤细的颈部和锁骨。她脸上挂着一丝微妙而神秘的微笑。她的头发刚好落在左肩上方，以柔和、轻松的方式勾勒出她的脸部轮廓。她戴着黑色香奈儿太阳镜，架在额头上，为她的整体造型增添了一丝精致。\n\n**中间一侧的图像：**\n正面的全身照片展示了我们的模特自信地站着，双脚与肩同宽。她的眼睛微微向下看，仿佛陷入了沉思。无袖黑色裹身裙紧贴着她纤细的身躯，展现出她健美的体格。腰部系带营造出鲜明的轮廓，凸显了她的曲线。她戴着一对金色环形耳环，上面挂着大颗珍珠，为她的整体造型增添了一丝魅力。她的头发散落下来，波浪形地垂在背后，勾勒出她的脸庞和肩膀。脖子上戴着一个带有标志性双 C 的香奈儿小手提包，为她的服装增添了一抹色彩和精致感。脖子上戴着一条金项链，上面有一个圆形吊坠，随着她的移动而闪烁着光芒。\n\n**右图：**\n从后面拍摄的全身照片显示我们的模特双脚与肩同宽站立。她穿着同样的无袖黑色裹身裙，腰部系带，营造出迷人的轮廓。从这个角度可以看到裙子的 V 领，为服装的整体优雅增添了光彩。她背着一个带有标志性双 C 的香奈儿小手提包，为她的整体造型增添了一丝精致感。她还戴着一条金项链，项链上有圆形吊坠，随着她的移动而闪烁着光芒。她的头发散落在背后，形成波浪形，勾勒出她的脸和肩膀。她的右手拿着一个黑色手包，为她的整体造型增添了一丝魅力。图片的白色背景为我们模特的别致服装提供了干净简约的背景。"
     },
     "class_type": "ShowText|pysssss"
   },
@@ -699,7 +698,7 @@
     "inputs": {
       "from_translate": "english",
       "to_translate": "chinese (simplified)",
-      "add_proxies": false,
+      "add_proxies": true,
       "proxies": "",
       "auth_data": "",
       "service": "GoogleTranslator",
@@ -724,7 +723,7 @@
       "model": "llama3.1:latest (text)",
       "extra_model": "none",
       "system": "You are an AI drawing assistant with rich imagination, good at describing various pictures, and accustomed to providing stable diffusion as prompts. I give you a text description of clothes. You need to add this pile of clothes to a female model and describe the scene when this female model wears these described clothes. The clothes cannot be changed.\n\nBased on the previous description, please write a detailed description of the three views of the model in the following format:\n\nLeft picture (Show the model from the left side, not the front of the face): a side profile photo of a slim Asian girl + (the clothes and clothing should be fully described, without any missing items);\n\nImage on the middle side (front view): Full-body photo of a slim Asian girl from the front + (the clothes and clothing must be fully described, without any missing items);\n\nRight image (back of the person, no need to describe facial expression): Full-body photo of a slim Asian girl from the back + (the clothes and clothing must be fully described, without any missing items);",
-      "seed": 743934808886346,
+      "seed": 195008206395226,
       "top_k": 40,
       "top_p": 0.9,
       "temperature": 0.5,
@@ -741,7 +740,7 @@
         "705",
         0
       ],
-      "text2": "Here are the three views of the model:\n\n**Left Picture**\n\nThe slim Asian girl stands in front of a plain white background, her left side facing the viewer. She's wearing a sleeveless, black wrap dress that hugs her curves perfectly, with a tie at the waist accentuating her slender figure. The dress falls just above her knees, showcasing her toned legs. Black high-heeled sandals adorn her feet, adding a touch of sophistication to her overall look. A small black crossbody bag hangs from her left shoulder, its sleek design complementing the simplicity of the outfit.\n\nHer long, dark hair cascades down her back, and she's wearing minimal makeup, allowing her natural beauty to shine through. Her gaze is directed slightly downward, as if lost in thought, adding a touch of mystery to her demeanor.\n\n**Middle Picture**\n\nThe girl stands facing the viewer, showcasing her chic fashion ensemble from the front. The sleeveless black wrap dress fits her body like a glove, with the tie at the waist creating a flattering definition around her midsection. The high-heeled sandals add a dramatic touch to her overall look, while the small black crossbody bag hangs elegantly from her shoulder.\n\nHer eyes are cast downward, and her facial expression is serene, as if she's enjoying a quiet moment to herself. Her dark hair falls in loose waves down her back, and her makeup is subtle yet effective, accentuating her natural features.\n\n**Right Picture**\n\nThe girl stands with her back facing the viewer, showcasing her outfit from behind. The sleeveless black wrap dress flows elegantly around her curves, with the tie at the waist creating a beautiful silhouette. Her long, dark hair cascades down her back, and she's wearing the same high-heeled sandals as before.\n\nA glimpse of the small black crossbody bag is visible on her left shoulder, while the gold hoop earrings peek out from behind her ears, adding a touch of sparkle to her overall look. The plain white background emphasizes the sleek design of the outfit, making the girl's style pop against the minimalist backdrop."
+      "text2": "Here are the three views of the model:\n\n**Left picture:**\nThe left side profile photo shows our slim Asian girl with a smooth, porcelain-like complexion. She has long, dark hair that falls down her back in loose waves. Her eyes are almond-shaped and slanted upwards slightly at the outer corners, giving her an endearing and youthful appearance. She's wearing the sleeveless, black wrap dress that is tied at the waist, creating a flattering silhouette. The V-neckline of the dress accentuates her delicate neck and collarbone. On her face, she has a subtle, enigmatic smile. Her hair falls just above her left shoulder, framing her face in a soft, effortless manner. She's wearing black Chanel sunglasses perched on her forehead, adding a touch of sophistication to her overall look.\n\n**Image on the middle side:**\nThe full-body photo from the front shows our model standing confidently with her feet shoulder-width apart. Her eyes are cast downwards slightly, as if lost in thought. The sleeveless, black wrap dress hugs her slender body, showcasing her toned physique. The tied waist creates a defined silhouette that accentuates her curves. She's wearing a pair of gold hoop earrings with large dangling pearls that add a touch of glamour to her overall look. Her hair falls down her back in loose waves, framing her face and shoulders. On her neck, she wears a small Chanel handbag with the iconic double Cs, which adds a pop of color and sophistication to her outfit. Around her neck is a gold necklace featuring a circular pendant that catches the light as she moves.\n\n**Right image:**\nThe full-body photo from behind shows our model standing with her feet shoulder-width apart. She's wearing the same sleeveless, black wrap dress that is tied at the waist, creating a flattering silhouette. The V-neckline of the dress is visible from this angle, adding to the overall elegance of the outfit. On her back, she wears a small Chanel handbag with the iconic double Cs, which adds a touch of sophistication to her overall look. She's also wearing the gold necklace featuring a circular pendant that catches the light as she moves. Her hair falls down her back in loose waves, framing her face and shoulders. In her right hand, she holds a black clutch, adding a touch of glamour to her overall look. The white background of the image provides a clean and minimalist backdrop for our model's chic outfit."
     },
     "class_type": "ShowText|pysssss"
   },
@@ -787,7 +786,7 @@
         "711",
         0
       ],
-      "text2": "这是一幅数字拼贴画，展示了一套别致、简约的时尚套装。中间是一件无袖黑色裹身裙，腰部系有领带，搭配黑色高跟凉鞋和黑色小斜挎包。左边是一副猫眼设计的黑色太阳镜，旁边是一条带有新月吊坠的金项链。右边是一个金色的路易威登手拿包，上面有字母图案，搭配金色耳环。背景是纯白色的，突出了时尚的黑色和金色配饰。"
+      "text2": "这是一幅数字拼贴画，展示了一件别致的香奈儿风格服装。中间是一件无袖黑色裹身裙，V 领，系腰，让人想起香奈儿的标志性风格。裙子周围是配饰：黑色香奈儿太阳镜、一对带有大颗珍珠的金环耳环、一个带有标志性双 C 的香奈儿小手提包、一条带有圆形吊坠的金项链和一个黑色手拿包。背景为白色，物品以对称、优雅的布局排列。"
     },
     "class_type": "ShowText|pysssss"
   },
@@ -801,8 +800,7 @@
         0
       ],
       "text_c": "",
-      "speak_and_recognation": true,
-      "result": "Here are the three views of the model: **Left Picture** The slim Asian girl stands in front of a plain white background, her left side facing the viewer. She's wearing a sleeveless, black wrap dress that hugs her curves perfectly, with a tie at the waist accentuating her slender figure. The dress falls just above her knees, showcasing her toned legs. Black high-heeled sandals adorn her feet, adding a touch of sophistication to her overall look. A small black crossbody bag hangs from her left shoulder, its sleek design complementing the simplicity of the outfit. Her long, dark hair cascades down her back, and she's wearing minimal makeup, allowing her natural beauty to shine through. Her gaze is directed slightly downward, as if lost in thought, adding a touch of mystery to her demeanor. **Middle Picture** The girl stands facing the viewer, showcasing her chic fashion ensemble from the front. The sleeveless black wrap dress fits her body like a glove, with the tie at the waist creating a flattering definition around her midsection. The high-heeled sandals add a dramatic touch to her overall look, while the small black crossbody bag hangs elegantly from her shoulder. Her eyes are cast downward, and her facial expression is serene, as if she's enjoying a quiet moment to herself. Her dark hair falls in loose waves down her back, and her makeup is subtle yet effective, accentuating her natural features. **Right Picture** The girl stands with her back facing the viewer, showcasing her outfit from behind. The sleeveless black wrap dress flows elegantly around her curves, with the tie at the waist creating a beautiful silhouette. Her long, dark hair cascades down her back, and she's wearing the same high-heeled sandals as before. A glimpse of the small black crossbody bag is visible on her left shoulder, while the gold hoop earrings peek out from behind her ears, adding a touch of sparkle to her overall look. The plain white background emphasizes the sleek design of the outfit, making the girl's style pop against the minimalist backdrop."
+      "speak_and_recognation": true
     },
     "class_type": "StringFunction|pysssss"
   },
