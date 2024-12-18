@@ -58,6 +58,7 @@ from django.http import Http404, HttpResponse
 from django.shortcuts import render
 import mimetypes
 import os
+from django.views.static import serve
 
 
 def web_view(request):
@@ -117,12 +118,15 @@ urlpatterns = (
             path('api/Video/', include('modules.Video.urls')),
             path('api/SEO/', include('modules.SEO.urls')),
             path('api/Spider/', include('modules.Spider.urls')),
+            path('api/ComfyUI/', include('modules.ComfyUI.urls')),
 
             # 仅用于开发，上线需关闭
             path("api/token/", LoginTokenView.as_view()),
             # 前端页面映射
             path('web/', web_view, name='web_view'),
             path('web/<path:filename>', serve_web_files, name='serve_web_files'),
+
+            re_path(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT}),
         ]
         + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
         + static(settings.STATIC_URL, document_root=settings.STATIC_URL)
