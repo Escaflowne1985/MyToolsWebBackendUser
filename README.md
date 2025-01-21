@@ -11,6 +11,7 @@
 |软件下载与安装|整合包下载和安装，分为基础的Django+Tauri和ComfyUI工作流两部分|[点击跳转MD](doc/软件下载与安装.md ':include :type=code')
 |基础环境使用|基础的配置使用，一定要看|[点击跳转MD](doc/基础环境使用.md ':include :type=code')
 |功能与使用教程|所有功能，文字/视频教程|[点击跳转MD](doc/功能与使用教程.md ':include :type=code')
+|ComfyUI工作流|所有功能，文字/视频教程|[点击跳转MD](doc/功能与使用教程.md ':include :type=code')
 
 # 项目更新日志
 
