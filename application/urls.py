@@ -113,11 +113,11 @@ urlpatterns = (
 
             path('api/Audio/', include('modules.Audio.urls')),
             path('api/Config/', include('modules.Config.urls')),
-            path('api/Image/', include('modules.Image.urls')),
             path('api/User/', include('modules.User.urls')),
             path('api/Video/', include('modules.Video.urls')),
             path('api/SEO/', include('modules.SEO.urls')),
             path('api/Spider/', include('modules.Spider.urls')),
+            path('api/Script/', include('modules.Script.f_urls')),
             path('api/ComfyUI/', include('modules.ComfyUI.urls')),
 
             # 仅用于开发，上线需关闭
