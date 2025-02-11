@@ -6,6 +6,11 @@ class VideoIntroductionClipCutData(CoreModel):
     task_name = models.CharField(max_length=255, verbose_name="任务名称", null=True, blank=True)
     task_id = models.CharField(max_length=30, verbose_name="任务ID", null=True, blank=True)
     name = models.CharField(max_length=255, verbose_name="目录名称", null=True, blank=True)
+    order_id = models.CharField(max_length=30, verbose_name="序号任务", null=True, blank=True)
+    video_path = models.CharField(max_length=255, verbose_name="视频路径", null=True, blank=True)
+    start_time = models.CharField(max_length=100, verbose_name="开始时间", null=True, blank=True)
+    end_time = models.CharField(max_length=100, verbose_name="结束时间", null=True, blank=True)
+    srt_text = models.TextField(verbose_name="解说文案", null=True, blank=True)
     txt = models.TextField(verbose_name="解说文案", null=True, blank=True)
     tag = models.CharField(max_length=30, verbose_name="序号任务", null=True, blank=True)
 
