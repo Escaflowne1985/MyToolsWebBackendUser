@@ -14,12 +14,35 @@ class SuccessResponse(Response):
     """
 
     def __init__(self, data=None, msg='success', status=None, template_name=None, headers=None, exception=False,
-                 content_type=None,page=1,limit=1,total=1):
+                 content_type=None, page=1, limit=1, total=1):
         std_data = {
             "code": 2000,
             "page": page,
             "limit": limit,
             "total": total,
+            "data": data,
+            "msg": msg
+        }
+        super().__init__(std_data, status, template_name, headers, exception, content_type)
+
+
+class SuccessPageResponse(Response):
+    """
+    标准响应成功的返回，包含分页信息。
+    默认返回2000作为code, 不支持其他返回码。
+    """
+
+    def __init__(self, data=None, msg='success', status=None, template_name=None, headers=None, exception=False,
+                 content_type=None, page=1, limit=10, total=1, total_pages=None, next_page=None, previous_page=None):
+        # Ensure we only include serializable data
+        std_data = {
+            "code": 2000,
+            "page": page,
+            "total_pages": total_pages,  # Include the total_pages in the response
+            "limit": limit,
+            "total": total,
+            "next": next_page,
+            "previous": previous_page,
             "data": data,
             "msg": msg
         }
@@ -33,7 +56,7 @@ class DetailResponse(Response):
     """
 
     def __init__(self, data=None, msg='success', status=None, template_name=None, headers=None, exception=False,
-                 content_type=None,):
+                 content_type=None, ):
         std_data = {
             "code": 2000,
             "data": data,
