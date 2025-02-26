@@ -1,4 +1,5 @@
-from dvadmin.system.models import *
+from django.db import models
+from dvadmin.utils.models import CoreModel, SoftDeleteModel
 
 
 class VideoIntroductionClipCutData(CoreModel):
@@ -66,4 +67,53 @@ class VideoCamSrt(CoreModel):
 
     class Meta:
         verbose_name = "直播内容过滤"
+        verbose_name_plural = verbose_name
+
+
+class AIStoryboardRoleBaseInfo(CoreModel, SoftDeleteModel):
+    name = models.CharField(max_length=255, verbose_name="名称", blank=True, null=True)
+    other_names = models.CharField(max_length=255, verbose_name="别名", blank=True, null=True)
+    prompt_en = models.TextField(verbose_name="关键描述(英文)", blank=True, null=True)
+    prompt_zh = models.TextField(verbose_name="关键描述(中文)", blank=True, null=True)
+    info = models.CharField(max_length=255, verbose_name="备注", blank=True, null=True)
+    trigger_words = models.CharField(max_length=255, verbose_name="触发词", blank=True, null=True)
+    url = models.CharField(max_length=255, verbose_name="角色LoRA连接", blank=True, null=True)
+    type = models.CharField(max_length=255, verbose_name="LoRA类型", blank=True, null=True)
+    cover = models.CharField(max_length=255, verbose_name="封面地址", blank=True, null=True)
+    lora_path = models.CharField(max_length=255, verbose_name="LoRA路径", blank=True, null=True)
+
+    class Meta:
+        verbose_name = "文生视频_角色设置"
+        verbose_name_plural = verbose_name
+
+
+class AIStoryboardRole(CoreModel, SoftDeleteModel):
+    cover = models.CharField(max_length=255, verbose_name="封面地址", blank=True, null=True)
+    name = models.CharField(max_length=255, verbose_name="角色名称", blank=True, null=True)
+    other_names = models.CharField(max_length=255, verbose_name="别名", blank=True, null=True)
+    prompt_en = models.TextField(verbose_name="关键描述(英文)", blank=True, null=True)
+    prompt_zh = models.TextField(verbose_name="关键描述(中文)", blank=True, null=True)
+    lora_path = models.CharField(max_length=255, verbose_name="LoRA路径", blank=True, null=True)
+
+    class Meta:
+        verbose_name = "文生视频_角色设置"
+        verbose_name_plural = verbose_name
+
+
+class AIStoryboardTextRenderer(CoreModel, SoftDeleteModel):
+    task_id = models.CharField(max_length=255, verbose_name="任务id", blank=True, null=True)
+    order_id = models.CharField(max_length=255, verbose_name="序号", blank=True, null=True)
+    level = models.CharField(max_length=255, verbose_name="层级", blank=True, null=True)
+    srt_text = models.TextField(verbose_name="文案信息", blank=True, null=True)
+    audio = models.TextField(verbose_name="音频地址", blank=True, null=True)
+    key_frame = models.CharField(max_length=255, verbose_name="关键帧方向", blank=True, null=True)
+    style = models.CharField(max_length=255, verbose_name="风格标签", blank=True, null=True)
+    role_name = models.CharField(max_length=100, verbose_name="角色名称", blank=True, null=True)
+    prompt_en = models.TextField(verbose_name="关键词描述(英文)", blank=True, null=True)
+    prompt_zh = models.TextField(verbose_name="关键词描述(中文)", blank=True, null=True)
+    image_select = models.TextField(verbose_name="选择图片地址", blank=True, null=True)
+    image_list = models.TextField(verbose_name="选择图片地址列表", blank=True, null=True)
+
+    class Meta:
+        verbose_name = "文生视频原创"
         verbose_name_plural = verbose_name
