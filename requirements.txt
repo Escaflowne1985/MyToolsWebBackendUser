@@ -167,3 +167,4 @@ sqlalchemy
 openai
 whitenoise==6.6.0
 numpy==1.23.5
+websockets==15.0
