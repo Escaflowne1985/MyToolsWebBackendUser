@@ -87,18 +87,6 @@ class AIStoryboardRoleBaseInfo(CoreModel, SoftDeleteModel):
         verbose_name_plural = verbose_name
 
 
-class AIStoryboardRole(CoreModel, SoftDeleteModel):
-    cover = models.CharField(max_length=255, verbose_name="封面地址", blank=True, null=True)
-    name = models.CharField(max_length=255, verbose_name="角色名称", blank=True, null=True)
-    other_names = models.CharField(max_length=255, verbose_name="别名", blank=True, null=True)
-    prompt_en = models.TextField(verbose_name="关键描述(英文)", blank=True, null=True)
-    prompt_zh = models.TextField(verbose_name="关键描述(中文)", blank=True, null=True)
-    lora_path = models.CharField(max_length=255, verbose_name="LoRA路径", blank=True, null=True)
-
-    class Meta:
-        verbose_name = "文生视频_角色设置"
-        verbose_name_plural = verbose_name
-
 
 class AIStoryboardTextRenderer(CoreModel, SoftDeleteModel):
     task_id = models.CharField(max_length=255, verbose_name="任务id", blank=True, null=True)
