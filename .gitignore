@@ -13,7 +13,6 @@ develop-eggs/
 dist/
 logs/
 downloads/
-models/
 temp_from/
 temp_to/
 temp_dir/**
