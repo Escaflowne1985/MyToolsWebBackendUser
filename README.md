@@ -17,7 +17,9 @@
 |ComfyUI工作流|所有功能，文字/视频教程|[点击跳转MD](doc/ComfyUI工作流使用.md ':include :type=code')
 
 🚨<font color="red">需要安装显卡驱动，暂时只支持N卡，为了处理视频加速。</font>🚨
+
 🚨<font color="red">需要安装显卡驱动，暂时只支持N卡，为了处理视频加速。</font>🚨
+
 🚨<font color="red">需要安装显卡驱动，暂时只支持N卡，为了处理视频加速。</font>🚨
 
 # 项目更新日志
