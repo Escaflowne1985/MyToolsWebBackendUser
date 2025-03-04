@@ -9,6 +9,7 @@ class VideoIntroductionClipCutData(CoreModel):
     name = models.CharField(max_length=255, verbose_name="目录名称", null=True, blank=True)
     order_id = models.CharField(max_length=30, verbose_name="序号任务", null=True, blank=True)
     video_path = models.CharField(max_length=255, verbose_name="视频路径", null=True, blank=True)
+    video_path_server = models.CharField(max_length=255, verbose_name="视频路径网络", null=True, blank=True)
     start_time = models.CharField(max_length=100, verbose_name="开始时间", null=True, blank=True)
     end_time = models.CharField(max_length=100, verbose_name="结束时间", null=True, blank=True)
     srt_text = models.TextField(verbose_name="解说文案", null=True, blank=True)
@@ -32,6 +33,8 @@ class VideoRepeatFunAsr(CoreModel):
     end_time = models.CharField(max_length=100, verbose_name="结束时间", null=True, blank=True)
     srt_text = models.CharField(max_length=255, verbose_name="字幕", null=True, blank=True)
     rewrite_text = models.CharField(max_length=255, verbose_name="修改文案", null=True, blank=True)
+    video_path = models.CharField(max_length=255, verbose_name="视频路径", null=True, blank=True)
+    video_path_server = models.CharField(max_length=255, verbose_name="视频路径网络", null=True, blank=True)
 
     class Meta:
         verbose_name = "短剧复述剧情+解说"
@@ -49,6 +52,8 @@ class VideoRepeatStory(CoreModel):
     end_time = models.CharField(max_length=100, verbose_name="结束时间", null=True, blank=True)
     srt_text = models.CharField(max_length=255, verbose_name="字幕", null=True, blank=True)
     rewrite_text = models.CharField(max_length=255, verbose_name="修改文案", null=True, blank=True)
+    video_path = models.CharField(max_length=255, verbose_name="视频路径", null=True, blank=True)
+    video_path_server = models.CharField(max_length=255, verbose_name="视频路径网络", null=True, blank=True)
 
     class Meta:
         verbose_name = "短剧复述剧情+解说"
@@ -85,7 +90,6 @@ class AIStoryboardRoleBaseInfo(CoreModel, SoftDeleteModel):
     class Meta:
         verbose_name = "文生视频_角色设置"
         verbose_name_plural = verbose_name
-
 
 
 class AIStoryboardTextRenderer(CoreModel, SoftDeleteModel):
