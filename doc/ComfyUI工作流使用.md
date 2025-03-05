@@ -14,57 +14,47 @@
 
 | 工作流名称 | 工作流拆解文字 | UI工具<br>文字教程 | UI工具<br>视频教程 | 工作流/API<br>工作流下载 | 模型资源 |
 | -------- | ----------- | ------------- | ------------- | ------------- | -------- |
-|重绘去除画面AI感|[流程拆解](https://datayang.blog.csdn.net/article/details/143976608)|[工具使用](https://datayang.blog.csdn.net/article/details/143976345)||[工作流下载](https://download.csdn.net/download/qq_20288327/90024547)||
-| 线稿草图生成 | [流程拆解](https://datayang.blog.csdn.net/article/details/144269580) | [工具使用](https://datayang.blog.csdn.net/article/details/144293187) | [视频教程](https://www.bilibili.com/video/BV1kwCnY5EmQ/) | [工作流下载](https://download.csdn.net/download/qq_20288327/90086260) | |
-|老照片修复上色|[流程拆解](https://datayang.blog.csdn.net/article/details/145059020)|[工具使用](https://datayang.blog.csdn.net/article/details/145374354)||[工作流下载](https://download.csdn.net/download/qq_20288327/90249978)||
-|卡通图片2D转绘3D|[流程拆解](https://datayang.blog.csdn.net/article/details/145358615)|[工具使用](https://datayang.blog.csdn.net/article/details/145380240)||[工作流下载](https://download.csdn.net/download/qq_20288327/90290327)||
-|自定义描述Q版卡通大头照|[流程拆解](https://datayang.blog.csdn.net/article/details/145358621)|[工具使用](https://datayang.blog.csdn.net/article/details/145380267)||[工作流下载](https://download.csdn.net/download/qq_20288327/90290328)||
+|**无AI感图像精修**|[流程拆解](https://datayang.blog.csdn.net/article/details/143976608)|[工具使用](https://datayang.blog.csdn.net/article/details/146039655)|[视频教程]()|[工作流下载](https://download.csdn.net/download/qq_20288327/90024547)||
+| **图片转换线稿** | [流程拆解](https://datayang.blog.csdn.net/article/details/144269580) | [工具使用](https://datayang.blog.csdn.net/article/details/146040826) | [视频教程](https://www.bilibili.com/video/BV1kwCnY5EmQ/) | [工作流下载](https://download.csdn.net/download/qq_20288327/90086260) | |
+|**旧照片修复上色**|[流程拆解](https://datayang.blog.csdn.net/article/details/145059020)|[工具使用](https://datayang.blog.csdn.net/article/details/146042897)|[视频教程]()|[工作流下载](https://download.csdn.net/download/qq_20288327/90249978)||
+|**卡通图片2D转绘3D**|[流程拆解](https://datayang.blog.csdn.net/article/details/145358615)|[工具使用](https://datayang.blog.csdn.net/article/details/146045067)|[视频教程]()|[工作流下载](https://download.csdn.net/download/qq_20288327/90290327)||
+|**大头贴图像转换**|[流程拆解](https://datayang.blog.csdn.net/article/details/145358621)|[工具使用](https://datayang.blog.csdn.net/article/details/146045095)|[视频教程]()|[工作流下载](https://download.csdn.net/download/qq_20288327/90290328)||
 
 
 ## 图像加工
 
 | 工作流名称 | 工作流拆解文字 | UI工具<br>文字教程 | UI工具<br>视频教程 | 工作流/API<br>工作流下载 | 模型资源 |
 | -------- | ----------- | ------------- | ------------- | ------------- | -------- |
-| 抠图换背景 | [流程拆解](https://datayang.blog.csdn.net/article/details/144269616) | [工具使用](https://datayang.blog.csdn.net/article/details/144430984) | [视频教程](https://www.bilibili.com/video/BV18Zc2eCEdG/) | [工作流下载](https://download.csdn.net/download/qq_20288327/90086263) | |
-|图像8K放大|[流程拆解](https://datayang.blog.csdn.net/article/details/144269658)|[工具使用](https://datayang.blog.csdn.net/article/details/144431035)|[视频教程](https://www.bilibili.com/video/BV1SZc2eCE6w/)|[工作流下载](https://download.csdn.net/download/qq_20288327/90086265)||
-|Flux图像缩放|[流程拆解](https://datayang.blog.csdn.net/article/details/144269680)|[工具使用](https://datayang.blog.csdn.net/article/details/144431052)|[视频教程](https://www.bilibili.com/video/BV1bP6JYVExQ/)|[工作流下载](https://download.csdn.net/download/qq_20288327/90086266)||
-|SUPIR图像超细节缩放|[流程拆解](https://datayang.blog.csdn.net/article/details/144269728)|[工具使用](https://datayang.blog.csdn.net/article/details/144431104)|[视频教程](https://www.bilibili.com/video/BV1JN63Y6EDA/)|[工作流下载](https://download.csdn.net/download/qq_20288327/90086267)||
-|全图超清放大TILE+SDXL|[流程拆解](https://datayang.blog.csdn.net/article/details/145056794)|[工具使用](https://datayang.blog.csdn.net/article/details/145374342)||[工作流下载](https://download.csdn.net/download/qq_20288327/90249962)||
+| **通用抠图换背景** | [流程拆解](https://datayang.blog.csdn.net/article/details/144269616) | [工具使用](https://datayang.blog.csdn.net/article/details/通用抠图换背景) | [视频教程](https://www.bilibili.com/video/BV18Zc2eCEdG/) | [工作流下载](https://download.csdn.net/download/qq_20288327/90086263) | |
+|**通用图像缩放**|[流程拆解](https://datayang.blog.csdn.net/article/details/144269658)|[工具使用](https://datayang.blog.csdn.net/article/details/146041819)|[视频教程](https://www.bilibili.com/video/BV1SZc2eCE6w/)|[工作流下载](https://download.csdn.net/download/qq_20288327/90086265)||
 
 
 ## 手办模型
 | 工作流名称 | 工作流拆解文字 | UI工具<br>文字教程 | UI工具<br>视频教程 | 工作流/API<br>工作流下载 | 模型资源 |
 | -------- | ----------- | ------------- | ------------- | ------------- | -------- |
-|参考图像生成人像手办(Flux版）|[流程拆解](https://datayang.blog.csdn.net/article/details/145364318)|[工具使用](https://datayang.blog.csdn.net/article/details/145380448)||[工作流下载](https://download.csdn.net/download/qq_20288327/90290329)||
-|手办圣诞祝福贺卡3件套（Flux版）|[流程拆解](https://datayang.blog.csdn.net/article/details/145358632)|[工具使用](https://datayang.blog.csdn.net/article/details/145380682)||[工作流下载](https://download.csdn.net/download/qq_20288327/90290333)||
-|提取画面细节生成可爱人像手办（Flux版）|[流程拆解](https://datayang.blog.csdn.net/article/details/145358638)|[工具使用](https://datayang.blog.csdn.net/article/details/145380825)||[工作流下载](https://download.csdn.net/download/qq_20288327/90290334)||
-|一键Q版盲盒手办形象_多关键词切换|[流程拆解](https://datayang.blog.csdn.net/article/details/145358638)|[工具使用](https://datayang.blog.csdn.net/article/details/145380987)||[工作流下载](https://download.csdn.net/download/qq_20288327/90290335)||
-|参考图像生成人像手办（SDXL版）|[流程拆解](https://datayang.blog.csdn.net/article/details/145358649)|[工具使用](https://datayang.blog.csdn.net/article/details/145380606)||[工作流下载](https://download.csdn.net/download/qq_20288327/90290336)||
-|图像反推生成人像手办描述参考（SDXL版）|[流程拆解](https://datayang.blog.csdn.net/article/details/145358655)|[工具使用](https://datayang.blog.csdn.net/article/details/145381234)||[工作流下载](https://download.csdn.net/download/qq_20288327/90290337)||
-|图像反推生成人像手办人像参考（SDXL版）|[流程拆解](https://datayang.blog.csdn.net/article/details/145358661)|[工具使用](https://datayang.blog.csdn.net/article/details/145381237)||[工作流下载](http://download.csdn.net/download/qq_20288327/90290338)||
+|**手办制造（FLUX版）**|[流程拆解](https://datayang.blog.csdn.net/article/details/145364318)|[工具使用](https://datayang.blog.csdn.net/article/details/146045123)|[视频教程]()|[工作流下载](https://download.csdn.net/download/qq_20288327/90290329)||
+|**手办制造（SDXL版）**|[流程拆解](https://datayang.blog.csdn.net/article/details/145358649)|[工具使用](https://datayang.blog.csdn.net/article/details/146047366)|[视频教程]()|[工作流下载](https://download.csdn.net/download/qq_20288327/90290336)||
 
 ## 装修设计
 | 工作流名称 | 工作流拆解文字 | UI工具<br>文字教程 | UI工具<br>视频教程 | 工作流/API<br>工作流下载 | 模型资源 |
 | -------- | ----------- | ------------- | ------------- | ------------- | -------- |
-|平面模型房屋3D渲染|[流程拆解](https://datayang.blog.csdn.net/article/details/145059285)|[工具使用](https://datayang.blog.csdn.net/article/details/145374358)||[工作流下载](https://download.csdn.net/download/qq_20288327/90250101)||
-|平面设计图生成房屋所有室内的效果图|[流程拆解](https://datayang.blog.csdn.net/article/details/145059313)|[工具使用](https://datayang.blog.csdn.net/article/details/145374363)||[工作流下载](https://download.csdn.net/download/qq_20288327/90250114)||
-|室内装修设计风格融合|[流程拆解](https://datayang.blog.csdn.net/article/details/145059344)|[工具使用](https://datayang.blog.csdn.net/article/details/145380212)||[工作流下载](https://download.csdn.net/download/qq_20288327/90250269)||
+|**建筑平面图3D渲染**|[流程拆解](https://datayang.blog.csdn.net/article/details/145059285)|[工具使用](https://datayang.blog.csdn.net/article/details/146043197)|[视频教程]()|[工作流下载](https://download.csdn.net/download/qq_20288327/90250101)||
+|**建筑平面图生成装修设计**|[流程拆解](https://datayang.blog.csdn.net/article/details/145059313)|[工具使用](https://datayang.blog.csdn.net/article/details/146043227)|[视频教程]()|[工作流下载](https://download.csdn.net/download/qq_20288327/90250114)||
+|**室内装修风格融合**|[流程拆解](https://datayang.blog.csdn.net/article/details/145059344)|[工具使用](https://datayang.blog.csdn.net/article/details/146043239)|[视频教程]()|[工作流下载](https://download.csdn.net/download/qq_20288327/90250269)||
 
 ## 人像写真
 
 | 工作流名称 | 工作流拆解文字 | UI工具<br>文字教程 | UI工具<br>视频教程 | 工作流/API<br>工作流下载 | 模型资源 |
 | -------- | ----------- | ------------- | ------------- | ------------- | -------- |
-|合成最美证件照|[流程拆解](https://datayang.blog.csdn.net/article/details/145058764)|[工具使用](https://datayang.blog.csdn.net/article/details/145374348)||[工作流下载](https://download.csdn.net/download/qq_20288327/90249967)||
+|**合成最美证件照**|[流程拆解](https://datayang.blog.csdn.net/article/details/145058764)|[工具使用](https://datayang.blog.csdn.net/article/details/146041424)|[视频教程]()|[工作流下载](https://download.csdn.net/download/qq_20288327/90249967)||
 
 # 服装换装
 
 | 工作流名称 | 工作流拆解文字 | UI工具<br>文字教程 | UI工具<br>视频教程 | 工作流/API<br>工作流下载 | 模型资源 |
 | -------- | ----------- | ------------- | ------------- | ------------- | -------- |
-|自定义随机模特服装穿搭试装3视角|[流程拆解](https://datayang.blog.csdn.net/article/details/143482629)|[工具使用](https://datayang.blog.csdn.net/article/details/143773912)|[视频教程](https://www.bilibili.com/video/BV14wqhYYEsd/)|[工作流下载](https://download.csdn.net/download/qq_20288327/89974199)||
-|FluxRedux基础换装|[流程拆解](http://download.csdn.net/download/qq_20288327/90290338)|[工具使用](https://datayang.blog.csdn.net/article/details/145381354)||[工作流下载](http://download.csdn.net/download/qq_20288327/90290338)||
-|FluxRedux换装去纹理二次采样|[流程拆解](http://download.csdn.net/download/qq_20288327/90290338)|[工具使用](https://datayang.blog.csdn.net/article/details/145382801)||[工作流下载](http://download.csdn.net/download/qq_20288327/90290338)||
-|图像与遮罩多样化处理换装|[流程拆解](http://download.csdn.net/download/qq_20288327/90290338)|[工具使用](https://datayang.blog.csdn.net/article/details/145382905)||[工作流下载](http://download.csdn.net/download/qq_20288327/90290338)||
-|语义切割全自动换装|[流程拆解](http://download.csdn.net/download/qq_20288327/90290338)|[工具使用](https://datayang.blog.csdn.net/article/details/145382975)||[工作流下载](http://download.csdn.net/download/qq_20288327/90290338)||
+|**虚拟随机模特试衣**|[流程拆解](https://datayang.blog.csdn.net/article/details/143482629)|[工具使用](https://datayang.blog.csdn.net/article/details/146032356)|[视频教程]()|[工作流下载](https://download.csdn.net/download/qq_20288327/89974199)||
+|**服装模特换装（手动选取蒙版）**|[流程拆解](http://download.csdn.net/download/qq_20288327/90290338)|[工具使用](https://datayang.blog.csdn.net/article/details/146048276)|[视频教程]()|[工作流下载](http://download.csdn.net/download/qq_20288327/90290338)||
+|**服装模特换装（语义切割全自动）**|[流程拆解](http://download.csdn.net/download/qq_20288327/90290338)|[工具使用](https://datayang.blog.csdn.net/article/details/146048241)|[视频教程]()|[工作流下载](http://download.csdn.net/download/qq_20288327/90290338)||
 
 
 
