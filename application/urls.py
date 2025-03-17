@@ -119,6 +119,7 @@ urlpatterns = (
             path('api/Spider/', include('modules.Spider.urls')),
             path('api/Script/', include('modules.Script.f_urls')),
             path('api/ComfyUI/', include('modules.ComfyUI.urls')),
+            path('api/AIProject/', include('modules.AIProject.urls')),
 
             # 仅用于开发，上线需关闭
             path("api/token/", LoginTokenView.as_view()),

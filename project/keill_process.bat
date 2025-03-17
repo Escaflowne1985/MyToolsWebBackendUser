@@ -1,6 +1,0 @@
-@echo off
-echo Killing all ffmpeg processes...
-taskkill /F /IM ffmpeg.exe /T
-echo Killing all Python processes...
-taskkill /F /IM python.exe /T
-echo Processes killed.
