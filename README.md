@@ -15,6 +15,7 @@
 |项目初始化应用|环境配置以及基本操作|[点击跳转MD](doc/基础环境使用.md ':include :type=code')
 |功能与使用教程|所有功能，文字/视频教程|[点击跳转MD](doc/功能与使用教程.md ':include :type=code')
 |ComfyUI工作流|所有功能，文字/视频教程|[点击跳转MD](doc/ComfyUI工作流使用.md ':include :type=code')
+|优秀Git项目|所有功能，文字/视频教程|[点击跳转MD](doc/Git项目介绍和使用.md ':include :type=code')
 
 🚨<font color="red">需要安装显卡驱动，暂时只支持N卡，为了处理视频加速。</font>🚨
 
