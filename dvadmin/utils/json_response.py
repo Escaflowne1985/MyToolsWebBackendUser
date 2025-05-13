@@ -5,6 +5,9 @@
 """
 
 from rest_framework.response import Response
+from django.core.paginator import Paginator, EmptyPage
+from collections.abc import Iterable
+from django.db.models.query import QuerySet
 
 
 class SuccessResponse(Response):
@@ -20,29 +23,6 @@ class SuccessResponse(Response):
             "page": page,
             "limit": limit,
             "total": total,
-            "data": data,
-            "msg": msg
-        }
-        super().__init__(std_data, status, template_name, headers, exception, content_type)
-
-
-class SuccessPageResponse(Response):
-    """
-    标准响应成功的返回，包含分页信息。
-    默认返回2000作为code, 不支持其他返回码。
-    """
-
-    def __init__(self, data=None, msg='success', status=None, template_name=None, headers=None, exception=False,
-                 content_type=None, page=1, limit=10, total=1, total_pages=None, next_page=None, previous_page=None):
-        # Ensure we only include serializable data
-        std_data = {
-            "code": 2000,
-            "page": page,
-            "total_pages": total_pages,  # Include the total_pages in the response
-            "limit": limit,
-            "total": total,
-            "next": next_page,
-            "previous": previous_page,
             "data": data,
             "msg": msg
         }
@@ -79,3 +59,63 @@ class ErrorResponse(Response):
             "msg": msg
         }
         super().__init__(std_data, status, template_name, headers, exception, content_type)
+
+
+class SuccessResponsePage(Response):
+    """
+    自动分页响应类。
+    只要把 QuerySet 或 list 传给 data，并把 request 也传进来，就能完成：
+    • 从 request.query_params 读 page、limit
+    • 用 Django Paginator 做分页
+    • 如果 data 是 QuerySet，分页后再调用 .values() 转 dict 列表
+    • 自动填充 code/page/limit/total/data 四个字段
+    """
+
+    def __init__(self, data=None, msg='success', request=None,
+                 status=None, template_name=None, headers=None,
+                 exception=False, content_type=None):
+
+        # 默认分页信息
+        page = 1
+        limit = 10
+        total = 0
+        result_data = data
+
+        if request is not None and isinstance(data, Iterable) and not isinstance(data, (str, bytes, dict)):
+            # 优先从 query_params 读取，若未提供再从 body 中读取
+            raw_page = request.query_params.get("page") or request.data.get("page") or 1
+            raw_limit = request.query_params.get("limit") or request.data.get("limit") or 10
+            try:
+                page = int(raw_page)
+            except (TypeError, ValueError):
+                page = 1
+            try:
+                limit = int(raw_limit)
+            except (TypeError, ValueError):
+                limit = 10
+
+            paginator = Paginator(data, limit)
+            try:
+                page_obj = paginator.page(page)
+            except EmptyPage:
+                page_obj = paginator.page(paginator.num_pages)
+
+            if isinstance(data, QuerySet):
+                result_data = list(page_obj.object_list.values())
+            else:
+                result_data = list(page_obj.object_list)
+
+            total = paginator.count
+            page = page_obj.number
+            limit = page_obj.paginator.per_page
+
+        payload = {
+            "code": 2000,
+            "msg": msg,
+            "page": page,
+            "limit": limit,
+            "total": total,
+            "data": result_data
+        }
+
+        super().__init__(payload, status, template_name, headers, exception, content_type)
