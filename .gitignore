@@ -117,3 +117,4 @@ __pypackages__/
 package-lock.json
 gunicorn.pid
 !plugins/__init__.py
+7-Zip/

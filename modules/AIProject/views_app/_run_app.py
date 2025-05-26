@@ -14,7 +14,7 @@ import sys
 sys.path.append(r"./")
 
 if len(sys.argv) < 2:
-    print("❌ 请提供要运行的模块名称。")
+    # print("❌ 请提供要运行的模块名称。")
     sys.exit(1)
 
 module_name = sys.argv[1]  # 获取命令行参数，例如 "Wav2Lip384_app" 或 "SovitsSrc_app"
