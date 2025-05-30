@@ -3,25 +3,29 @@
 【QQ交流群群：670870515】获取最新动态。
 
 基于Tauri作为前端打包exe应用程序适配多种平台，结合Django Web后台框架实现AI工具箱前后分离，并且也支持局域网使用一台管理后台多台机器同时使用。
-![在这里插入图片描述](./doc/assets/006c4e16acf245e3adaa43f3f5d71e20.png)
 
-![在这里插入图片描述](./doc/assets/a51c2304c96b4f0d89f461b68cea3edb.png)
+**脚本工具**
+
+![在这里插入图片描述](./assets/a40539aaf2ef46ae9ed8087daff86697.png)
+
+**ComfyUI**
+
+![在这里插入图片描述](./assets/274d3ff9cd4740e5ac4d8d2811a682d6.png)
+
+**整合包**
+
+![在这里插入图片描述](./assets/7fd54673a7eb41a29d3463d048665e92.png)
+
+**AI Chat对话**
+
+![在这里插入图片描述](./assets/ddb810f00df442f8a4b27f694902114b.png)
 
 这种应用程序体积非常小，打包仅仅5MB都不到功能还在持续完善中，功能会增加在本文中持续更新。
 
-|文档名称|文档描述|文档地址|
-|---|---|---|
-|软件下载与安装|整合包下载和安装，分为基础的Django+Tauri和ComfyUI工作流两部分|[点击跳转MD](doc/软件下载与安装.md ':include :type=code')|
-|项目初始化应用|环境配置以及基本操作|[点击跳转MD](doc/基础环境使用.md ':include :type=code')|
-|功能与使用教程|所有功能，文字/视频教程|[点击跳转MD](doc/功能与使用教程.md ':include :type=code')|
-|ComfyUI工作流|所有功能，文字/视频教程|[点击跳转MD](doc/ComfyUI工作流使用.md ':include :type=code')|
-|优秀Git项目|所有功能，文字/视频教程|[点击跳转MD](doc/Git项目介绍和使用.md ':include :type=code')|
-
+🚨<font color="red">需要安装显卡驱动，暂时只支持N卡，为了处理视频加速。</font>🚨
+🚨<font color="red">需要安装显卡驱动，暂时只支持N卡，为了处理视频加速。</font>🚨
 🚨<font color="red">需要安装显卡驱动，暂时只支持N卡，为了处理视频加速。</font>🚨
 
-🚨<font color="red">需要安装显卡驱动，暂时只支持N卡，为了处理视频加速。</font>🚨
-
-🚨<font color="red">需要安装显卡驱动，暂时只支持N卡，为了处理视频加速。</font>🚨
 
 # 项目更新日志
 
