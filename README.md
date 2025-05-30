@@ -6,19 +6,19 @@
 
 **脚本工具**
 
-![在这里插入图片描述](./assets/a40539aaf2ef46ae9ed8087daff86697.png)
+![在这里插入图片描述](./doc/assets/a40539aaf2ef46ae9ed8087daff86697.png)
 
 **ComfyUI**
 
-![在这里插入图片描述](./assets/274d3ff9cd4740e5ac4d8d2811a682d6.png)
+![在这里插入图片描述](./doc/assets/274d3ff9cd4740e5ac4d8d2811a682d6.png)
 
 **整合包**
 
-![在这里插入图片描述](./assets/7fd54673a7eb41a29d3463d048665e92.png)
+![在这里插入图片描述](./doc/assets/7fd54673a7eb41a29d3463d048665e92.png)
 
 **AI Chat对话**
 
-![在这里插入图片描述](./assets/ddb810f00df442f8a4b27f694902114b.png)
+![在这里插入图片描述](./doc/assets/ddb810f00df442f8a4b27f694902114b.png)
 
 这种应用程序体积非常小，打包仅仅5MB都不到功能还在持续完善中，功能会增加在本文中持续更新。
 
