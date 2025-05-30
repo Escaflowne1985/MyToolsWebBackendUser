@@ -9,11 +9,13 @@
 
 这种应用程序体积非常小，打包仅仅5MB都不到功能还在持续完善中，功能会增加在本文中持续更新。
 
-|文档名称|文档描述|文档地址| |-|-|-| |软件下载与安装|整合包下载和安装，分为基础的Django+Tauri和ComfyUI工作流两部分|[点击跳转MD](doc/软件下载与安装.md ':include :type=code')
-|项目初始化应用|环境配置以及基本操作|[点击跳转MD](doc/基础环境使用.md ':include :type=code')
-|功能与使用教程|所有功能，文字/视频教程|[点击跳转MD](doc/功能与使用教程.md ':include :type=code')
-|ComfyUI工作流|所有功能，文字/视频教程|[点击跳转MD](doc/ComfyUI工作流使用.md ':include :type=code')
-|优秀Git项目|所有功能，文字/视频教程|[点击跳转MD](doc/Git项目介绍和使用.md ':include :type=code')
+|文档名称|文档描述|文档地址|
+|---|---|---|
+|软件下载与安装|整合包下载和安装，分为基础的Django+Tauri和ComfyUI工作流两部分|[点击跳转MD](doc/软件下载与安装.md ':include :type=code')|
+|项目初始化应用|环境配置以及基本操作|[点击跳转MD](doc/基础环境使用.md ':include :type=code')|
+|功能与使用教程|所有功能，文字/视频教程|[点击跳转MD](doc/功能与使用教程.md ':include :type=code')|
+|ComfyUI工作流|所有功能，文字/视频教程|[点击跳转MD](doc/ComfyUI工作流使用.md ':include :type=code')|
+|优秀Git项目|所有功能，文字/视频教程|[点击跳转MD](doc/Git项目介绍和使用.md ':include :type=code')|
 
 🚨<font color="red">需要安装显卡驱动，暂时只支持N卡，为了处理视频加速。</font>🚨
 
