@@ -111,8 +111,8 @@ urlpatterns = (
             path("api/init/settings/", InitSettingsViewSet.as_view()),
             path("apiLogin/", ApiLogin.as_view()),
 
-            path('api/Audio/', include('modules.Audio.urls')),
             path('api/Config/', include('modules.Config.urls')),
+            path('api/Audio/', include('modules.Audio.urls')),
             path('api/User/', include('modules.User.urls')),
             path('api/Video/', include('modules.Video.urls')),
             path('api/SEO/', include('modules.SEO.urls')),
@@ -120,6 +120,7 @@ urlpatterns = (
             path('api/Script/', include('modules.Script.f_urls')),
             path('api/ComfyUI/', include('modules.ComfyUI.urls')),
             path('api/AIProject/', include('modules.AIProject.urls')),
+            path('api/PyJianYingDraft/', include('modules.PyJianYingDraft.urls')),
 
             # 仅用于开发，上线需关闭
             path("api/token/", LoginTokenView.as_view()),
@@ -127,7 +128,7 @@ urlpatterns = (
             path('web/', web_view, name='web_view'),
             path('web/<path:filename>', serve_web_files, name='serve_web_files'),
 
-            re_path(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT}),
+            re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
         ]
         + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
         + static(settings.STATIC_URL, document_root=settings.STATIC_URL)
