@@ -117,7 +117,7 @@ urlpatterns = (
             path('api/Video/', include('modules.Video.urls')),
             path('api/SEO/', include('modules.SEO.urls')),
             path('api/Spider/', include('modules.Spider.urls')),
-            path('api/Script/', include('modules.Script.f_urls')),
+            path('api/script/', include('modules.script.urls')),
             path('api/ComfyUI/', include('modules.ComfyUI.urls')),
             path('api/AIProject/', include('modules.AIProject.urls')),
             path('api/PyJianYingDraft/', include('modules.PyJianYingDraft.urls')),
