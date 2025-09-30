@@ -118,7 +118,7 @@ urlpatterns = (
             path('api/SEO/', include('modules.SEO.urls')),
             path('api/Spider/', include('modules.Spider.urls')),
             path('api/script/', include('modules.script.urls')),
-            path('api/ComfyUI/', include('modules.ComfyUI.urls')),
+            path('api/Project/', include('modules.Project.urls')),
             path('api/PyJianYingDraft/', include('modules.PyJianYingDraft.urls')),
 
             # 仅用于开发，上线需关闭
