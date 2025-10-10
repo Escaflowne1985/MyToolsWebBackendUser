@@ -1,0 +1,1 @@
+\venv\python.exe -m pip install gradio_client
