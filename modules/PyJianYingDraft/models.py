@@ -20,6 +20,7 @@ class AIStoryboardTextRenderer(CoreModel, SoftDeleteModel):
     prompt_zh = models.TextField(verbose_name="关键词描述(中文)", blank=True, null=True)
     image_select = models.TextField(verbose_name="选择图片地址", blank=True, null=True)
     image_list = models.TextField(verbose_name="选择图片地址列表", blank=True, null=True)
+    api_task_id = models.CharField(max_length=255, verbose_name="API请求使用的task id", blank=True, null=True)
 
     class Meta:
         verbose_name = "文生视频原创"
