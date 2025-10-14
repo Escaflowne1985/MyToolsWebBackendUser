@@ -94,6 +94,24 @@ from modules.script.services_chatgpt import __all__ as services_chatgpt_all
 from modules.script.services_video_scene import *
 from modules.script.services_video_scene import __all__ as services_video_scene_all
 
+# ---- 数据下载含命令行（流式/整段模式统一）----
+# 来源文件：services_download.py
+# 作用说明：提供视频下载服务的核心功能，包括URL验证、域名提取、实时进度监控和WebSocket通信支持。
+from modules.script.services_download import *
+from modules.script.services_download import __all__ as services_download_all
+
+# ---- 数据上传含命令行（流式/整段模式统一）----
+# 来源文件：services_upload.py
+# 作用说明：提供视频下载服务的核心功能，包括URL验证、域名提取、实时进度监控和WebSocket通信支持。
+from modules.script.services_upload import *
+from modules.script.services_upload import __all__ as services_upload_all
+
+# ---- ComfyUI服务器（流式/整段模式统一）----
+# 来源文件：services_confyui.py
+# 作用说明：提供请求云服务器的API方法。
+from modules.script.services_confyui import *
+from modules.script.services_confyui import __all__ as services_comfyui_all
+
 # =========================
 # __all__ 对外导出名（供 IDE 补全与 from modules.script import *）
 # 说明：
@@ -117,6 +135,9 @@ all_list = [
     services_config_store_all,
     services_chatgpt_all,
     services_video_scene_all,
+    services_download_all,
+    services_upload_all,
+    services_comfyui_all,
 ]
 
 for sub_all in all_list:
