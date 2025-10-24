@@ -109,8 +109,8 @@ from modules.script.services_upload import __all__ as services_upload_all
 # ---- ComfyUI服务器（流式/整段模式统一）----
 # 来源文件：services_confyui.py
 # 作用说明：提供请求云服务器的API方法。
-from modules.script.services_confyui import *
-from modules.script.services_confyui import __all__ as services_comfyui_all
+from modules.script.services_comfyui import *
+from modules.script.services_comfyui import __all__ as services_comfyui_all
 
 # =========================
 # __all__ 对外导出名（供 IDE 补全与 from modules.script import *）
