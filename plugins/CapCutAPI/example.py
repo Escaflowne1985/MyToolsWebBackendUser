@@ -276,6 +276,7 @@ def add_video_impl(video_url, start=None, end=None, width=None, height=None, tra
                    mask_rect_width=None, mask_round_corner=None):
     """API call to add video track"""
     data = {
+        "draft_id": draft_id,
         "license_key": LICENSE_KEY,  # Using trial version license key
         "video_url": video_url,
         "height": height,
