@@ -5,7 +5,7 @@ from dvadmin.utils.models import CoreModel, SoftDeleteModel
 # Create your models here.
 
 
-class P0006(CoreModel, SoftDeleteModel):
+class p0006(CoreModel, SoftDeleteModel):
     task_id = models.CharField(max_length=255, verbose_name="任务id", blank=True, null=True)
     order_id = models.CharField(max_length=255, verbose_name="序号", blank=True, null=True)
     level = models.CharField(max_length=255, verbose_name="层级", blank=True, null=True)
@@ -19,6 +19,7 @@ class P0006(CoreModel, SoftDeleteModel):
     prompt_en = models.TextField(verbose_name="关键词描述(英文)", blank=True, null=True)
     prompt_zh = models.TextField(verbose_name="关键词描述(中文)", blank=True, null=True)
     image_select = models.TextField(verbose_name="选择图片地址", blank=True, null=True)
+    video_select = models.TextField(verbose_name="选择视频地址", blank=True, null=True)
     image_list = models.TextField(verbose_name="选择图片地址列表", blank=True, null=True)
     api_task_id = models.CharField(max_length=255, verbose_name="API请求使用的task id", blank=True, null=True)
 
